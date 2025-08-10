@@ -1,0 +1,33 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname="helvetica"] ;
+edge [fontname="helvetica"] ;
+0 [label="TotalWorkingYears <= 0.038\ngini = 0.271\nsamples = 1176\nvalue = [986.0, 190.0]\nclass = 0", fillcolor="#ea995f"] ;
+1 [label="Age <= 0.369\ngini = 0.49\nsamples = 72\nvalue = [31, 41]\nclass = 1", fillcolor="#cfe7f9"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="JobRole_Research Scientist <= 0.5\ngini = 0.458\nsamples = 62\nvalue = [22, 40]\nclass = 1", fillcolor="#a6d3f3"] ;
+1 -> 2 ;
+3 [label="gini = 0.331\nsamples = 43\nvalue = [9, 34]\nclass = 1", fillcolor="#6db7ec"] ;
+2 -> 3 ;
+4 [label="gini = 0.432\nsamples = 19\nvalue = [13, 6]\nclass = 0", fillcolor="#f1bb94"] ;
+2 -> 4 ;
+5 [label="JobSatisfaction <= 0.333\ngini = 0.18\nsamples = 10\nvalue = [9, 1]\nclass = 0", fillcolor="#e88f4f"] ;
+1 -> 5 ;
+6 [label="gini = 0.0\nsamples = 1\nvalue = [0, 1]\nclass = 1", fillcolor="#399de5"] ;
+5 -> 6 ;
+7 [label="gini = 0.0\nsamples = 9\nvalue = [9, 0]\nclass = 0", fillcolor="#e58139"] ;
+5 -> 7 ;
+8 [label="OverTime_Yes <= 0.5\ngini = 0.233\nsamples = 1104\nvalue = [955, 149]\nclass = 0", fillcolor="#e99558"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="WorkLifeBalance <= 0.167\ngini = 0.164\nsamples = 787\nvalue = [716, 71]\nclass = 0", fillcolor="#e88d4d"] ;
+8 -> 9 ;
+10 [label="gini = 0.38\nsamples = 47\nvalue = [35.0, 12.0]\nclass = 0", fillcolor="#eeac7d"] ;
+9 -> 10 ;
+11 [label="gini = 0.147\nsamples = 740\nvalue = [681, 59]\nclass = 0", fillcolor="#e78c4a"] ;
+9 -> 11 ;
+12 [label="MonthlyIncome <= 0.077\ngini = 0.371\nsamples = 317\nvalue = [239, 78]\nclass = 0", fillcolor="#edaa7a"] ;
+8 -> 12 ;
+13 [label="gini = 0.48\nsamples = 40\nvalue = [16, 24]\nclass = 1", fillcolor="#bddef6"] ;
+12 -> 13 ;
+14 [label="gini = 0.314\nsamples = 277\nvalue = [223, 54]\nclass = 0", fillcolor="#eba069"] ;
+12 -> 14 ;
+}
